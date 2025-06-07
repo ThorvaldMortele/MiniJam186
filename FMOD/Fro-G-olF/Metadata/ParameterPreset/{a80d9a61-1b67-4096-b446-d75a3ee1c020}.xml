@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{a80d9a61-1b67-4096-b446-d75a3ee1c020}">
+		<property name="name">
+			<value>RibbitVoiceOver</value>
+		</property>
+		<relationship name="folder">
+			<destination>{286ac838-6fac-470d-80fd-570bba8a177d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{872dbdcf-97ce-4778-bfa5-d7373b9fccdf}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{872dbdcf-97ce-4778-bfa5-d7373b9fccdf}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Good</value>
+			<value>Perfect</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
