@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{943a21cc-3c2b-4d7a-8b42-4df713c57ebb}">
+		<property name="assetPath">
+			<value>ForGolF-MusicMelody.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.905041666666669</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e672843f-2323-42ce-b116-e7c257b3239c}</destination>
+		</relationship>
+	</object>
+</objects>

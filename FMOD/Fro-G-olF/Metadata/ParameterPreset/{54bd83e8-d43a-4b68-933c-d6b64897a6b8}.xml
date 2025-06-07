@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{54bd83e8-d43a-4b68-933c-d6b64897a6b8}">
+		<property name="name">
+			<value>GolfHit</value>
+		</property>
+		<relationship name="folder">
+			<destination>{286ac838-6fac-470d-80fd-570bba8a177d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{590f249e-3671-47c9-8a8a-0d8709d0753b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{590f249e-3671-47c9-8a8a-0d8709d0753b}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>HitNeutral</value>
+			<value>HitGood</value>
+			<value>HitPerfect</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
