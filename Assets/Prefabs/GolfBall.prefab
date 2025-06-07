@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: -3104970186858816165, guid: a6780dd85bc245843bec9dcb09273b98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -139,3 +139,7 @@ MonoBehaviour:
     m_Bits: 8
   GroundCheckRadius: 0.2
   BallTexture: {fileID: -3104970186858816165, guid: a6780dd85bc245843bec9dcb09273b98, type: 3}
+  GrassMaterial: {fileID: 6200000, guid: fdd15018f7977634792d6f93fe612894, type: 2}
+  SandMaterial: {fileID: 6200000, guid: 381816ef66c94b9499d9ba472dbc1cac, type: 2}
+  MudMaterial: {fileID: 6200000, guid: 9b34414a7fdb9964a9bece0b738b022c, type: 2}
+  RaycastDistance: 1

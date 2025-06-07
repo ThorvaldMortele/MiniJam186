@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3530228508198828211}
   - component: {fileID: 5414128645839699920}
   - component: {fileID: 7907761654254778928}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MudTop2
-  m_TagString: Untagged
+  m_TagString: Mud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

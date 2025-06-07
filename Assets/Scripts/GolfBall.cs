@@ -10,6 +10,12 @@ public class GolfBall : MonoBehaviour
     public float GroundCheckRadius = 0.1f;
     public Sprite BallTexture;
 
+    public PhysicsMaterial2D GrassMaterial;
+    public PhysicsMaterial2D SandMaterial;
+    public PhysicsMaterial2D MudMaterial;
+
+    public float RaycastDistance = 1f;
+
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -19,6 +25,7 @@ public class GolfBall : MonoBehaviour
     public void Shoot(Vector2 direction, float force) 
     {
         _rb.AddForce(direction * force, ForceMode2D.Impulse);
+        _rb.angularVelocity = -720f;
     }
 
     public bool IsBallGrounded()
@@ -31,5 +38,28 @@ public class GolfBall : MonoBehaviour
         Debug.DrawRay(groundCheckPos, Vector3.left * GroundCheckRadius, isGrounded ? Color.green : Color.red);
 
         return isGrounded;
+    }
+
+    private void FixedUpdate()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, RaycastDistance, GroundLayer);
+
+        if (hit.collider != null)
+        {
+            string tag = hit.collider.tag;
+
+            if (tag == "Mud")
+            {
+                _rb.sharedMaterial = MudMaterial;
+            }
+            else if (tag == "Sand")
+            {
+                _rb.sharedMaterial = SandMaterial;
+            }
+            else
+            {
+                _rb.sharedMaterial = GrassMaterial;
+            }
+        }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4712337127321435019}
   - component: {fileID: 4231880517866208488}
   - component: {fileID: 1979934691054994075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lily1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

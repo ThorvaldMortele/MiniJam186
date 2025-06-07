@@ -50,7 +50,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 806a1bba9d1501a4bbe99e9157723905, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ball: {fileID: 0}
   ShootAngleRenderer: {fileID: 3504933828670603883}
-  _lineLength: 1.5
+  _lineLength: 0.75
   MarkerSpeed: 500
   MarkerSpeedIncreaseStep: 100
   Marker: {fileID: 0}

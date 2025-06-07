@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
         GameManager.Instance.Holes.Add(CurrentLevel);
         GameManager.Instance.HasScored = false;
         GameManager.Instance.RoundEndTallyObj = RoundEndTallyObj;
+        PowerBar.SetActive(false);
         ResetShooting();
     }
 
@@ -84,7 +85,6 @@ public class Player : MonoBehaviour
 
                 _canDetermineAngle = false;
                 _waitingToShoot = false;
-                ShootAngleRenderer.enabled = false;
             }
 
             // Allow the player to aim if we're in aim state
@@ -102,8 +102,6 @@ public class Player : MonoBehaviour
                 PowerBar.SetActive(true);
                 _canDetermineShootPower = true;
                 Marker.anchoredPosition = new Vector2(-Bar.rect.width / 2, Marker.anchoredPosition.y);
-
-                ShootAngleRenderer.enabled = false;
             }
 
             if (_canDetermineShootPower)
@@ -204,7 +202,8 @@ public class Player : MonoBehaviour
             Ball.Shoot(_shootAngle, _shootPower);
             _canDetermineShootPower = false;
             PowerBar.SetActive(false);
-            
+            ShootAngleRenderer.enabled = false;
+
             _hasChosenAngle = false;
 
             CurrentLevel.Strokes += 1;

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8428236195702343417}
   - component: {fileID: 1092159627031921050}
   - component: {fileID: 5275638011780040213}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GrassSlopedTopLeft4
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
