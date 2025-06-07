@@ -439,6 +439,7 @@ MonoBehaviour:
   StartDelay: 3
   DelayBetweenLevels: 2
   MaxLevels: 6
+  HasScored: 0
   Holes: []
   RoundEndTallyObj: {fileID: 0}
 --- !u!4 &1546011258

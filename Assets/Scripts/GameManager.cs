@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public float DelayBetweenLevels = 2f;
     public float MaxLevels = 6;
 
+    public bool HasScored = false;
+
     public List<Level> Holes = new List<Level>();
     public GameObject RoundEndTallyObj;
 
@@ -41,13 +43,12 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (!GameStarted)
+        if (!GameStarted && !HasScored)
         {
             _startTimer += Time.deltaTime;
             if (_startTimer >= StartDelay)
             {
                 GameStarted = true;
-                RoundEndTallyObj = FindObjectOfType<Player>()?.RoundEndTallyObj;
                 Debug.Log("Game started! You can now aim.");
             }
             else
@@ -80,25 +81,34 @@ public class GameManager : MonoBehaviour
     {
         RecordStrokes((int)CurrentLevel - 1, strokes);
 
+        HasScored = true;
         GameStarted = false;
         CurrentLevel += 1;
 
         if (CurrentLevel > MaxLevels)
         {
-            StartCoroutine(DelayAfterGoalReached());
-            SceneManager.LoadScene("EndScene");
+            StartCoroutine(DelayAfterGoalReachedEndGame());
         }
         else
         {
-            StartCoroutine(DelayAfterGoalReached());
-            RoundEndTallyObj.SetActive(true);
-            RoundEndTallyObj.GetComponent<RoundEndTally>().DisplayScores();
+            StartCoroutine(DelayAfterGoalReachedShowScoreBoard());
+
         }
     }
 
-    public IEnumerator DelayAfterGoalReached()
+    public IEnumerator DelayAfterGoalReachedEndGame()
     {
         yield return new WaitForSeconds(DelayBetweenLevels);
+
+        SceneManager.LoadScene("EndScene");
+    }
+
+    public IEnumerator DelayAfterGoalReachedShowScoreBoard()
+    {
+        yield return new WaitForSeconds(DelayBetweenLevels);
+
+        RoundEndTallyObj.SetActive(true);
+        RoundEndTallyObj.GetComponent<RoundEndTally>().DisplayScores();
     }
 
     public IEnumerator LoadNextLevel()

@@ -8,10 +8,12 @@ public class GolfBall : MonoBehaviour
 
     public LayerMask GroundLayer; // Assign to "Ground" layer in Inspector
     public float GroundCheckRadius = 0.1f;
+    public Sprite BallTexture;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        GetComponent<SpriteRenderer>().sprite = BallTexture;
     }
 
     public void Shoot(Vector2 direction, float force) 
@@ -27,7 +29,6 @@ public class GolfBall : MonoBehaviour
         // Optional: Debug draw the circle in Scene view
         Debug.DrawRay(groundCheckPos, Vector3.right * GroundCheckRadius, isGrounded ? Color.green : Color.red);
         Debug.DrawRay(groundCheckPos, Vector3.left * GroundCheckRadius, isGrounded ? Color.green : Color.red);
-
 
         return isGrounded;
     }

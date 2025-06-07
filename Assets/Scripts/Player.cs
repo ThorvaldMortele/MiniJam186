@@ -40,6 +40,8 @@ public class Player : MonoBehaviour
     {
         CurrentLevel.Strokes = 0;
         GameManager.Instance.Holes.Add(CurrentLevel);
+        GameManager.Instance.HasScored = false;
+        GameManager.Instance.RoundEndTallyObj = RoundEndTallyObj;
         ResetShooting();
     }
 
@@ -110,11 +112,6 @@ public class Player : MonoBehaviour
                 DetermineShootPower();
             }
         }
-    }
-
-    public void CheckIfReachedGoal()
-    {
-
     }
 
     public void DetermineShootAngle()
