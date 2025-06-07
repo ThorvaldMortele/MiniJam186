@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     private Vector3 _shootAngle;
     private bool _canDetermineAngle = false;
     [SerializeField] private float _lineLength = 5f;
-    public GameObject AngleChooserObject;
 
     private bool _canDetermineShootPower = false;
     public float MarkerSpeed = 300f;
@@ -19,56 +18,112 @@ public class Player : MonoBehaviour
     public RectTransform Marker;
     public RectTransform Bar;
     public RectTransform SuccessZone;
+    public RectTransform PerfectZone;
     private bool _inputAllowed = true;
-    private float _cooldownFactor = 0.4f; // 0.2 = 20% of total bar traversal time
+    private float _cooldownFactor = 0.2f; // 0.2 = 20% of total bar traversal time
     private float _shootPower = 5f;
     private float _shootPowerIncreaseStep = 5f;
+    private bool _hasChosenAngle = false;
+
+    [SerializeField] private BallCameraZoom _cameraZoom;
+
+    private float _stationaryTime = 0f;
+    public float RequiredStationaryTime = 1f; // seconds before aiming is allowed
+    public float VelocityThreshold = 0.05f; // how still the ball needs to be
+    private bool _waitingToShoot = false;
 
     public GameObject PowerBar;
-
-    //determine angle -> linerenderer from golfball to mouse pos
-    //when left click -> get direction vector, normalize it
-    //start spacebar power ui
-    //check for spacebar input
-    //when missing the mark -> shoot golf ball in set direction
+    public Level CurrentLevel;
+    public GameObject RoundEndTallyObj;
 
     private void Start()
     {
+        CurrentLevel.Strokes = 0;
+        GameManager.Instance.Holes.Add(CurrentLevel);
         ResetShooting();
     }
 
     public void ResetShooting()
     {
+        _shootPower = 5f;
+        MarkerSpeed = 500f;
+        _hasChosenAngle = false;
+
         ShootAngleRenderer.positionCount = 2;
         ShootAngleRenderer.SetPosition(0, Ball.transform.position);
         ShootAngleRenderer.SetPosition(1, Ball.transform.position);
 
         _canDetermineAngle = true;
+        ShootAngleRenderer.enabled = true;
+
+        Debug.Log("ResetShooting called - ready to aim");
     }
 
     private void Update()
     {
-        if (_canDetermineAngle) DetermineShootAngle();
-
-        if (Input.GetMouseButtonDown(0) && _canDetermineAngle)
+        if (GameManager.Instance.GameStarted)
         {
-            _canDetermineAngle = false;
-            _shootAngle = ShootAngleRenderer.GetPosition(1) - ShootAngleRenderer.GetPosition(0);
+            Rigidbody2D rb = Ball.GetComponent<Rigidbody2D>();
 
-            PowerBar.SetActive(true);
-            _canDetermineShootPower = true;
-            Marker.anchoredPosition = new Vector2(-Bar.rect.width / 2, Marker.anchoredPosition.y);
-        }
+            if (Ball.IsBallGrounded() && rb.velocity.magnitude < VelocityThreshold && !_hasChosenAngle)
+            {
+                _stationaryTime += Time.deltaTime;
 
-        if (_canDetermineShootPower)
-        {
-            UpdatePowerMarker();
-            DetermineShootPower();
+                // After being idle long enough and the ball has been shot before
+                if (_stationaryTime >= RequiredStationaryTime)
+                {
+                    _waitingToShoot = true;
+                    ResetShooting();
+                }
+            }
+            else
+            {
+                _stationaryTime = 0f;
+
+                _canDetermineAngle = false;
+                _waitingToShoot = false;
+                ShootAngleRenderer.enabled = false;
+            }
+
+            // Allow the player to aim if we're in aim state
+            if (_canDetermineAngle && !_hasChosenAngle)
+                DetermineShootAngle();
+
+            if (Input.GetMouseButtonDown(0) && _waitingToShoot)
+            {
+                _canDetermineAngle = false;
+                _waitingToShoot = false;
+                _hasChosenAngle = true;
+
+                _shootAngle = ShootAngleRenderer.GetPosition(1) - ShootAngleRenderer.GetPosition(0);
+
+                PowerBar.SetActive(true);
+                _canDetermineShootPower = true;
+                Marker.anchoredPosition = new Vector2(-Bar.rect.width / 2, Marker.anchoredPosition.y);
+
+                ShootAngleRenderer.enabled = false;
+            }
+
+            if (_canDetermineShootPower)
+            {
+                UpdatePowerMarker();
+                DetermineShootPower();
+            }
         }
+    }
+
+    public void CheckIfReachedGoal()
+    {
+
     }
 
     public void DetermineShootAngle()
     {
+        if (!_canDetermineAngle)
+            return;
+
+        ShootAngleRenderer.enabled = true;
+
         var mouseworldpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseworldpos.z = 0;
 
@@ -80,11 +135,6 @@ public class Player : MonoBehaviour
         ShootAngleRenderer.SetPosition(1, endpoint);
     }
 
-    //in increments of 5
-    //each time the zone gets hit +5
-    //save currentpower
-    //when missing, shoot with current power
-    //when in the perfect zone, +10
     public void DetermineShootPower()
     {
         if (Input.GetKeyDown(KeyCode.Space) && _inputAllowed)
@@ -131,9 +181,20 @@ public class Player : MonoBehaviour
     public void CheckSuccess()
     {
         float markerX = Marker.anchoredPosition.x;
+
         float successStart = SuccessZone.anchoredPosition.x - SuccessZone.rect.width / 2;
         float successEnd = SuccessZone.anchoredPosition.x + SuccessZone.rect.width / 2;
 
+        float perfectStart = PerfectZone.anchoredPosition.x - PerfectZone.rect.width / 2 + SuccessZone.anchoredPosition.x;
+        float perfectEnd = PerfectZone.anchoredPosition.x + PerfectZone.rect.width / 2 + SuccessZone.anchoredPosition.x;
+
+        if (markerX >= perfectStart && markerX <= perfectEnd)
+        {
+            MarkerSpeed += (MarkerSpeedIncreaseStep * 2);
+            _shootPower += (_shootPowerIncreaseStep * 2);
+
+            Debug.Log("Perfect Success!");
+        }
         if (markerX >= successStart && markerX <= successEnd)
         {
             MarkerSpeed += MarkerSpeedIncreaseStep;
@@ -146,7 +207,10 @@ public class Player : MonoBehaviour
             Ball.Shoot(_shootAngle, _shootPower);
             _canDetermineShootPower = false;
             PowerBar.SetActive(false);
-            AngleChooserObject.SetActive(false);
+            
+            _hasChosenAngle = false;
+
+            CurrentLevel.Strokes += 1;
 
             Debug.Log("Failed!");
         }

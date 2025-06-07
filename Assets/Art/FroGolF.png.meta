@@ -1,0 +1,1320 @@
+fileFormatVersion: 2
+guid: a6780dd85bc245843bec9dcb09273b98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3104970186858816165
+    second: FroGolF_0
+  - first:
+      213: -6863205781119411405
+    second: FroGolF_1
+  - first:
+      213: -5537054704937659144
+    second: FroGolF_2
+  - first:
+      213: -1049058828827020711
+    second: FroGolF_3
+  - first:
+      213: -3152430689094303071
+    second: FroGolF_4
+  - first:
+      213: 1776154786449189058
+    second: FroGolF_5
+  - first:
+      213: 2176499467514080108
+    second: FroGolF_6
+  - first:
+      213: 4423721795837605284
+    second: FroGolF_7
+  - first:
+      213: -8934439957275389277
+    second: FroGolF_8
+  - first:
+      213: -8655648356363139476
+    second: FroGolF_9
+  - first:
+      213: 8396960120388572210
+    second: FroGolF_10
+  - first:
+      213: 1494913765797757435
+    second: FroGolF_11
+  - first:
+      213: 4387787954148395161
+    second: FroGolF_12
+  - first:
+      213: -4003999449408323813
+    second: FroGolF_13
+  - first:
+      213: 341437968741640058
+    second: FroGolF_14
+  - first:
+      213: -8785538768031362724
+    second: FroGolF_15
+  - first:
+      213: 571242688330261555
+    second: FroGolF_16
+  - first:
+      213: 5592516491904710940
+    second: FroGolF_17
+  - first:
+      213: -1103918077450068411
+    second: FroGolF_18
+  - first:
+      213: -1793269565098903583
+    second: FroGolF_19
+  - first:
+      213: -602662252813167226
+    second: FroGolF_20
+  - first:
+      213: -5955620564148658289
+    second: FroGolF_21
+  - first:
+      213: 7814496775287010439
+    second: FroGolF_22
+  - first:
+      213: -7397801457741424778
+    second: FroGolF_23
+  - first:
+      213: -2248124583483788490
+    second: FroGolF_24
+  - first:
+      213: 1385601030340251586
+    second: FroGolF_25
+  - first:
+      213: -7755862567440292737
+    second: FroGolF_26
+  - first:
+      213: -8596372609028404680
+    second: FroGolF_27
+  - first:
+      213: 8810210693452406855
+    second: FroGolF_28
+  - first:
+      213: 5858506643844483414
+    second: FroGolF_29
+  - first:
+      213: -673496986438327675
+    second: FroGolF_30
+  - first:
+      213: 4945296099735917894
+    second: FroGolF_31
+  - first:
+      213: 6240147462409062595
+    second: FroGolF_32
+  - first:
+      213: -5803690440725054417
+    second: FroGolF_33
+  - first:
+      213: 575666789584558375
+    second: FroGolF_34
+  - first:
+      213: -2783123679803046660
+    second: FroGolF_35
+  - first:
+      213: 3393602852048448569
+    second: FroGolF_36
+  - first:
+      213: -3014286403616319328
+    second: FroGolF_37
+  - first:
+      213: 1933891422093560100
+    second: FroGolF_38
+  - first:
+      213: 5121435233823015130
+    second: FroGolF_39
+  - first:
+      213: -7854889988772735026
+    second: FroGolF_40
+  - first:
+      213: -158228122300332420
+    second: FroGolF_41
+  - first:
+      213: -1350683266156172556
+    second: FroGolF_42
+  - first:
+      213: 3720420148324715484
+    second: FroGolF_43
+  - first:
+      213: -882879661519706067
+    second: FroGolF_44
+  - first:
+      213: 5695251307257802354
+    second: FroGolF_45
+  - first:
+      213: -773105700860448053
+    second: FroGolF_46
+  - first:
+      213: -7579732309997536193
+    second: FroGolF_47
+  - first:
+      213: -1529101334565996661
+    second: FroGolF_48
+  - first:
+      213: 1652833600244690137
+    second: FroGolF_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FroGolF_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d1a1ed01ee8e4d0800000000000000
+      internalID: -3104970186858816165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 327.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b58f374bef0c0a0800000000000000
+      internalID: -6863205781119411405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 327.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4194a151e6823b0800000000000000
+      internalID: -5537054704937659144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 327.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9523747ad8ef071f0800000000000000
+      internalID: -1049058828827020711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 327.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a28e759df05044d0800000000000000
+      internalID: -3152430689094303071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8e9682e5b26a810800000000000000
+      internalID: 1776154786449189058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 291.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6be00febba743e10800000000000000
+      internalID: 2176499467514080108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 291.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5bd021987346d30800000000000000
+      internalID: 4423721795837605284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 291.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a25b8f023e720480800000000000000
+      internalID: -8934439957275389277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 291.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c660842fda5f0e780800000000000000
+      internalID: -8655648356363139476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234d1e09dbef78470800000000000000
+      internalID: 8396960120388572210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_11
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 255.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1873c46200fb410800000000000000
+      internalID: 1494913765797757435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 255.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998c0c495ed84ec30800000000000000
+      internalID: 4387787954148395161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_13
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 255.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f382107bfee68c0800000000000000
+      internalID: -4003999449408323813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 255.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a772da706080db400800000000000000
+      internalID: 341437968741640058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51511bc90f731680800000000000000
+      internalID: -8785538768031362724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 219.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334e67ec2367de700800000000000000
+      internalID: 571242688330261555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 219.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c197e747e1c9c9d40800000000000000
+      internalID: 5592516491904710940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_18
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 219.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ed47c7b581ea0f0800000000000000
+      internalID: -1103918077450068411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 219.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7b2c9e4d60d17e0800000000000000
+      internalID: -1793269565098903583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685d885cfd9e2a7f0800000000000000
+      internalID: -602662252813167226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 183.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f58e0b6a2695da0800000000000000
+      internalID: -5955620564148658289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 183.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784fa650a6ba27c60800000000000000
+      internalID: 7814496775287010439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 183.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6779478f4cab55990800000000000000
+      internalID: -7397801457741424778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_24
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 183.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63330a63a9e0dc0e0800000000000000
+      internalID: -2248124583483788490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 147.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf88ddbbc4aa3310800000000000000
+      internalID: 1385601030340251586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_26
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 147.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74e8f45614ad5490800000000000000
+      internalID: -7755862567440292737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 147.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ac6f958ac83b880800000000000000
+      internalID: -8596372609028404680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_28
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 147.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740249b72f7244a70800000000000000
+      internalID: 8810210693452406855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 147.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659cd9cb0c89d4150800000000000000
+      internalID: 5858506643844483414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5822c062f0247a6f0800000000000000
+      internalID: -673496986438327675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_31
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 111.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64552e5f99831a440800000000000000
+      internalID: 4945296099735917894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_32
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 111.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c882fa2e05799650800000000000000
+      internalID: 6240147462409062595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_33
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 111.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cb04e1b46257fa0800000000000000
+      internalID: -5803690440725054417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 111.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7295d2625ed2df700800000000000000
+      internalID: 575666789584558375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf48c5342cb5069d0800000000000000
+      internalID: -2783123679803046660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_36
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 75.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ca91950df781f20800000000000000
+      internalID: 3393602852048448569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_37
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 75.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8d82d7c7a1b26d0800000000000000
+      internalID: -3014286403616319328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_38
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 75.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429cf00900096da10800000000000000
+      internalID: 1933891422093560100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 75.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0c03ce53ef21740800000000000000
+      internalID: 5121435233823015130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7dd651c23ddf290800000000000000
+      internalID: -7854889988772735026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_41
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 39.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76cfc07c5cddcdf0800000000000000
+      internalID: -158228122300332420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_42
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 39.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa62b4c9b8614de0800000000000000
+      internalID: -1350683266156172556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_43
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 39.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbc91cc96691a330800000000000000
+      internalID: 3720420148324715484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_44
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 39.6
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2863b320a16fb3f0800000000000000
+      internalID: -882879661519706067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.5999985
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e2ea3a3e8990f40800000000000000
+      internalID: 5695251307257802354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_46
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3.5999985
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2326e06706545f0800000000000000
+      internalID: -773105700860448053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_47
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3.5999985
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cbb0a8f916fc690800000000000000
+      internalID: -7579732309997536193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_48
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 3.5999985
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b873e9f007a87cae0800000000000000
+      internalID: -1529101334565996661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 3.5999985
+        width: 36.8
+        height: 36.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc2a6ff66b00f610800000000000000
+      internalID: 1652833600244690137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
