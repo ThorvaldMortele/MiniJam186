@@ -9,12 +9,10 @@ public class RoundEndTally : MonoBehaviour
 
     public void DisplayScores()
     {
-        foreach (var holeScoreObj in ScoreObjs)
+        for (int i = 0; i < GameManager.Instance.CurrentLevel - 1; i++)
         {
-            var idx = ScoreObjs.IndexOf(holeScoreObj);
-
-            holeScoreObj.SetActive(true);
-            holeScoreObj.GetComponentInChildren<TextMeshProUGUI>().text = GameManager.Instance.Holes[idx].Strokes.ToString();
+            ScoreObjs[i].SetActive(true);
+            ScoreObjs[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = GameManager.Instance.Holes[i].Strokes.ToString();
         }
     }
 
