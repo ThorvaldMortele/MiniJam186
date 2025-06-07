@@ -9,11 +9,15 @@ public class RoundEndTally : MonoBehaviour
 
     public void DisplayScores()
     {
+        int total = 0;
+
         for (int i = 0; i < GameManager.Instance.CurrentLevel - 1; i++)
         {
-            ScoreObjs[i].SetActive(true);
-            ScoreObjs[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = GameManager.Instance.Holes[i].Strokes.ToString();
+            total += GameManager.Instance.Holes[i].Strokes;
+            ScoreObjs[i].transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = GameManager.Instance.Holes[i].Strokes.ToString();
         }
+
+        ScoreObjs[ScoreObjs.Count-1].transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = total.ToString();
     }
 
     public void NextHole()
@@ -21,3 +25,6 @@ public class RoundEndTally : MonoBehaviour
         StartCoroutine(GameManager.Instance.LoadNextLevel());
     }
 }
+
+
+

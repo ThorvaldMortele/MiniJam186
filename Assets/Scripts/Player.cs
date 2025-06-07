@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -36,6 +39,16 @@ public class Player : MonoBehaviour
     public Level CurrentLevel;
     public GameObject RoundEndTallyObj;
 
+    public int CurrentCombo = 0;
+    public TextMeshProUGUI ComboText;
+    private float _comboScaleStep = .15f;
+
+    private float _currentBaseScale = 1f;
+
+    private float _shakeTimer;
+    [SerializeField] private CinemachineVirtualCamera _cam;
+    private CinemachineBasicMultiChannelPerlin _noise;
+
     private void Start()
     {
         CurrentLevel.Strokes = 0;
@@ -44,6 +57,8 @@ public class Player : MonoBehaviour
         GameManager.Instance.RoundEndTallyObj = RoundEndTallyObj;
         PowerBar.SetActive(false);
         ResetShooting();
+
+        _noise = _cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
 
     public void ResetShooting()
@@ -188,12 +203,16 @@ public class Player : MonoBehaviour
             MarkerSpeed += (MarkerSpeedIncreaseStep * 2);
             _shootPower += (_shootPowerIncreaseStep * 2);
 
+            IncreaseCombo("perfect");
+
             Debug.Log("Perfect Success!");
         }
-        if (markerX >= successStart && markerX <= successEnd)
+        else if (markerX >= successStart && markerX <= successEnd)
         {
             MarkerSpeed += MarkerSpeedIncreaseStep;
             _shootPower += _shootPowerIncreaseStep;
+
+            IncreaseCombo("success");
 
             Debug.Log("Success!");
         }
@@ -208,6 +227,8 @@ public class Player : MonoBehaviour
 
             CurrentLevel.Strokes += 1;
 
+            IncreaseCombo("failure");
+
             Debug.Log("Failed!");
         }
     }
@@ -215,5 +236,108 @@ public class Player : MonoBehaviour
     public void ResetInput()
     {
         _inputAllowed = true;
+    }
+
+    public void IncreaseCombo(string spacebarPressActionType)
+    {
+        ComboText.rectTransform.DOKill();
+
+        switch (spacebarPressActionType)
+        {
+            case "success":
+                {
+                    CurrentCombo += 1;
+                    ComboText.text = "x" + CurrentCombo;
+                    ComboText.color = Color.white;
+
+                    _currentBaseScale += _comboScaleStep;
+                    PlayPop(_currentBaseScale, 0.15f, false);
+                    Shake(1, 0.2f);
+                    PopPowerBar();
+                    break;
+                }
+
+            case "perfect":
+                {
+                    CurrentCombo += 2;
+                    ComboText.text = "x" + CurrentCombo;
+                    ComboText.color = Color.yellow;
+
+                    _currentBaseScale += _comboScaleStep * 2;
+                    PlayPop(_currentBaseScale, 0.15f, true); // Shake enabled
+                    Shake(2.5f, 0.3f);
+                    PopPowerBar(1.25f, 0.3f);
+                    break;
+                }
+
+            case "failure":
+                {
+                    CurrentCombo = 0;
+                    ComboText.text = "";
+                    _currentBaseScale = 1f;
+
+                    ComboText.rectTransform.DOKill();
+                    ComboText.rectTransform.localScale = Vector3.one;
+                    ComboText.rectTransform.localRotation = Quaternion.identity;
+                    break;
+                }
+        }
+    }
+
+    private void PlayPop(float targetScale, float duration, bool doShake)
+    {
+        RectTransform rt = ComboText.rectTransform;
+        rt.localScale = Vector3.one * targetScale;
+
+        float popAmount = 0.2f * targetScale;
+        float randomZ = Random.Range(10f, 25f);
+        if (rt.localEulerAngles.z > 0) randomZ = -randomZ;
+
+        Sequence pop = DOTween.Sequence();
+        pop.Append(rt.DOScale(targetScale + popAmount, duration * 0.5f).SetEase(Ease.OutBack));
+        pop.Join(rt.DORotate(new Vector3(0, 0, randomZ), duration * 0.5f));
+        pop.Append(rt.DOScale(targetScale, duration * 0.3f).SetEase(Ease.InBack));
+        pop.Append(rt.DORotate(Vector3.zero, duration * 0.2f));
+
+        // Add shake at the end only if it's a perfect
+        if (doShake)
+        {
+            pop.Append(rt.DOShakeRotation(
+                duration: 0.25f,
+                strength: 10f,   // degrees
+                vibrato: 10,
+                randomness: 90,
+                fadeOut: true
+            ));
+        }
+    }
+
+    private void PopPowerBar(float scaleUp = 1.1f, float duration = 0.2f)
+    {
+        Bar.DOKill(); // Cancel any ongoing tweens on this panel
+
+        Bar.localScale = Vector3.one; // Reset scale in case it was mid-tween
+
+        Sequence pop = DOTween.Sequence();
+        pop.Append(Bar.DOScale(scaleUp, duration * 0.5f).SetEase(Ease.OutBack));
+        pop.Append(Bar.DOScale(1f, duration * 0.5f).SetEase(Ease.InOutQuad));
+    }
+
+    public void Shake(float intensity, float time)
+    {
+        if (_noise == null) return;
+
+        _noise.m_AmplitudeGain = intensity;
+        _noise.m_FrequencyGain = 2f; // You can tweak this for snappier or smoother shake
+        _shakeTimer = time;
+
+        CancelInvoke(nameof(StopShake));
+        Invoke(nameof(StopShake), time);
+    }
+
+    private void StopShake()
+    {
+        if (_noise == null) return;
+        _noise.m_AmplitudeGain = 0f;
     }
 }

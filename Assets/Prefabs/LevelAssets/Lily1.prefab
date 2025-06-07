@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4712337127321435019}
   - component: {fileID: 4231880517866208488}
-  - component: {fileID: 1979934691054994075}
+  - component: {fileID: 826875013782940979}
   m_Layer: 3
   m_Name: Lily1
-  m_TagString: Untagged
+  m_TagString: Lily
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,8 +83,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &1979934691054994075
-PolygonCollider2D:
+--- !u!61 &826875013782940979
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,7 +96,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.016149022, y: -0.030055264}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -106,24 +106,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.019883499, y: -0.01969096}
-      - {x: -0.019331606, y: -0.0694495}
-      - {x: -0.017542873, y: -0.06984137}
-      - {x: -0.01628352, y: -0.06969954}
-      - {x: -0.01470162, y: -0.06960882}
-      - {x: -0.012225106, y: -0.069753624}
-      - {x: -0.009807341, y: -0.070504986}
-      - {x: -0.00986024, y: -0.040215135}
-      - {x: 0.0012689978, y: -0.020054065}
-      - {x: 0.020705327, y: -0.01056519}
-      - {x: 0.13003418, y: 0.009953243}
-      - {x: 0.050462343, y: 0.00969521}
-      - {x: -0.03975358, y: 0.010104591}
-      - {x: -0.07771699, y: 0.00998525}
-      - {x: -0.08700978, y: 0.0104830405}
-      - {x: -0.09946429, y: 0.010236718}
-      - {x: -0.08985792, y: 0.010355345}
-      - {x: -0.08997614, y: -0.000072540366}
-      - {x: -0.05131469, y: -0.00044904277}
+  serializedVersion: 2
+  m_Size: {x: 0.23028259, y: 0.08224897}
+  m_EdgeRadius: 0

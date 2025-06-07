@@ -13,6 +13,7 @@ public class GolfBall : MonoBehaviour
     public PhysicsMaterial2D GrassMaterial;
     public PhysicsMaterial2D SandMaterial;
     public PhysicsMaterial2D MudMaterial;
+    public PhysicsMaterial2D LilyMaterial;
 
     public float RaycastDistance = 1f;
 
@@ -25,12 +26,12 @@ public class GolfBall : MonoBehaviour
     public void Shoot(Vector2 direction, float force) 
     {
         _rb.AddForce(direction * force, ForceMode2D.Impulse);
-        _rb.angularVelocity = -720f;
+        _rb.angularVelocity = -360f * 10;
     }
 
     public bool IsBallGrounded()
     {
-        Vector3 groundCheckPos = transform.position + Vector3.up * -0.2871468f; //manual offset so it doesnt rotate with
+        Vector3 groundCheckPos = transform.position + Vector3.up * -0.5f; //manual offset so it doesnt rotate with
         bool isGrounded = Physics2D.OverlapCircle(groundCheckPos, GroundCheckRadius, GroundLayer);
 
         // Optional: Debug draw the circle in Scene view
@@ -55,6 +56,11 @@ public class GolfBall : MonoBehaviour
             else if (tag == "Sand")
             {
                 _rb.sharedMaterial = SandMaterial;
+            }
+            else if (tag == "Lily")
+            {
+                _rb.sharedMaterial = LilyMaterial;
+                _rb.AddForce(Vector2.up * 2, ForceMode2D.Impulse);
             }
             else
             {

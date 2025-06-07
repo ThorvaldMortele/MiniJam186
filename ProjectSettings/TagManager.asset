@@ -8,6 +8,7 @@ TagManager:
   - Sand
   - Grass
   - Mud
+  - Lily
   layers:
   - Default
   - TransparentFX

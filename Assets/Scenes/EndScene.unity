@@ -468,9 +468,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4120291807312360787, guid: 47d115eb5b6f2ce43851ff23f5a41ded, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4120291807312360789, guid: 47d115eb5b6f2ce43851ff23f5a41ded, type: 3}
       propertyPath: m_Name
       value: Scoreboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120291807312360789, guid: 47d115eb5b6f2ce43851ff23f5a41ded, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4120291808276568811, guid: 47d115eb5b6f2ce43851ff23f5a41ded, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
