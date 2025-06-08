@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3edc4793-ed38-4889-a36b-242b41ea577a}">
+		<property name="assetPath">
+			<value>ForGolF-LevelComplete.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.7462291666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e672843f-2323-42ce-b116-e7c257b3239c}</destination>
+		</relationship>
+	</object>
+</objects>
