@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 public class Hole : MonoBehaviour
@@ -15,9 +16,10 @@ public class Hole : MonoBehaviour
             _ballInside = true;
 
             if (_checkCoroutine == null)
-                _checkCoroutine = StartCoroutine(CheckBallStaysInGoal(collision.GetComponent<Rigidbody2D>()));
-
-            GameManager.Instance.ReachedGoal(Player.CurrentLevel.Strokes);
+            {
+                Rigidbody2D ballRb = collision.GetComponent<Rigidbody2D>();
+                _checkCoroutine = StartCoroutine(CheckBallStaysInGoal(ballRb));
+            }
         }
     }
 
@@ -53,12 +55,10 @@ public class Hole : MonoBehaviour
                     yield break;
                 }
             }
-            else
-            {
-                timeInGoal = 0f; // reset if ball moves
-            }
 
             yield return null;
         }
+
+        _checkCoroutine = null;
     }
 }

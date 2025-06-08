@@ -729,6 +729,7 @@ Transform:
   - {fileID: 56976553}
   - {fileID: 1416650166}
   - {fileID: 4924833558058927587}
+  - {fileID: 7852846891892824344}
   - {fileID: 591418829}
   - {fileID: 811920369}
   - {fileID: 267921445}
@@ -736,7 +737,6 @@ Transform:
   - {fileID: 1790981200}
   - {fileID: 1813336037}
   - {fileID: 1221286475}
-  - {fileID: 7852846891892824344}
   - {fileID: 1010995923}
   - {fileID: 2108425822}
   - {fileID: 1595391923}
@@ -7052,9 +7052,49 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 220989803}
     - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ribbit.Path
+      value: event:/Ribbit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ballHit.Path
+      value: event:/GolfHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
       propertyPath: RoundEndTallyObj
       value: 
       objectReference: {fileID: 1213724324}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ribbit.Guid.Data1
+      value: 729240623
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ribbit.Guid.Data2
+      value: 1215681492
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ribbit.Guid.Data3
+      value: 931154075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ribbit.Guid.Data4
+      value: 1257043624
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ballHit.Guid.Data1
+      value: 501457214
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ballHit.Guid.Data2
+      value: 1338573347
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ballHit.Guid.Data3
+      value: -1959033185
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504933828725941324, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
+      propertyPath: _ballHit.Guid.Data4
+      value: 297172927
+      objectReference: {fileID: 0}
     - target: {fileID: 3504933828725941325, guid: a1fa28cdc2004d24495492eb9412424f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7524,7 +7564,7 @@ Transform:
   - {fileID: 2902730712254934785}
   - {fileID: 2988232034737746970}
   m_Father: {fileID: 162827306}
-  m_RootOrder: 25
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8027189008889809437
 SpriteRenderer:

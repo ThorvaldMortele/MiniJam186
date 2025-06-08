@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using DG.Tweening;
+using FMODUnity;
 using TMPro;
 using UnityEngine;
 
@@ -48,6 +49,9 @@ public class Player : MonoBehaviour
     private float _shakeTimer;
     [SerializeField] private CinemachineVirtualCamera _cam;
     private CinemachineBasicMultiChannelPerlin _noise;
+
+    [SerializeField] private EventReference _ballHit;
+    [SerializeField] private EventReference _ribbit;
 
     private void Start()
     {
@@ -203,6 +207,7 @@ public class Player : MonoBehaviour
             MarkerSpeed += (MarkerSpeedIncreaseStep * 2);
             _shootPower += (_shootPowerIncreaseStep * 2);
 
+            AudioManager.Instance.PlaySFX(_ribbit, "RibbitVoiceOver", 1);
             IncreaseCombo("perfect");
 
             Debug.Log("Perfect Success!");
@@ -212,6 +217,7 @@ public class Player : MonoBehaviour
             MarkerSpeed += MarkerSpeedIncreaseStep;
             _shootPower += _shootPowerIncreaseStep;
 
+            AudioManager.Instance.PlaySFX(_ribbit, "RibbitVoiceOver", 0);
             IncreaseCombo("success");
 
             Debug.Log("Success!");
@@ -226,6 +232,10 @@ public class Player : MonoBehaviour
             _hasChosenAngle = false;
 
             CurrentLevel.Strokes += 1;
+
+            if (CurrentCombo >= 0 && CurrentCombo <= 3) AudioManager.Instance.PlaySFX(_ballHit, "GolfHit", 0);
+            else if (CurrentCombo > 3 && CurrentCombo <= 12) AudioManager.Instance.PlaySFX(_ballHit, "GolfHit", 1);
+            else AudioManager.Instance.PlaySFX(_ballHit, "GolfHit", 2);
 
             IncreaseCombo("failure");
 
