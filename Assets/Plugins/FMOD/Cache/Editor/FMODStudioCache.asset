@@ -41,11 +41,38 @@ MonoBehaviour:
   Path: FMOD/Fro-G-olF/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638849361856554994
+  lastModified: 638849953658921925
   FileSizes:
   - Name: Desktop
-    Value: 988
+    Value: 1086
   Exists: 1
+--- !u!114 &-6869962856827041730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameComplete
+  m_EditorClassIdentifier: 
+  Path: event:/GameComplete
+  Guid:
+    Data1: 1504857035
+    Data2: 1127310497
+    Data3: 1319288995
+    Data4: 1419555212
+  Banks:
+  - {fileID: 5725514409690219146}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5126319809746406037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,12 +147,14 @@ MonoBehaviour:
   - {fileID: 3747658573897078974}
   - {fileID: 2873345930056618932}
   - {fileID: -5126319809746406037}
+  - {fileID: 7325305078378816550}
+  - {fileID: -6869962856827041730}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5725514409690219146}
   StringsBanks:
   - {fileID: -8390576874200459898}
-  cacheTime: 638849740761630115
+  cacheTime: 638849953658921925
   cacheVersion: 131624
 --- !u!114 &2873345930056618932
 MonoBehaviour:
@@ -198,10 +227,10 @@ MonoBehaviour:
   Path: FMOD/Fro-G-olF/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638849740761630115
+  lastModified: 638849953658907334
   FileSizes:
   - Name: Desktop
-    Value: 150592
+    Value: 182912
   Exists: 1
 --- !u!114 &7015894383844927261
 MonoBehaviour:
@@ -227,3 +256,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &7325305078378816550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LevelComplete
+  m_EditorClassIdentifier: 
+  Path: event:/LevelComplete
+  Guid:
+    Data1: 1400590190
+    Data2: 1336234692
+    Data3: -1784020052
+    Data4: 1137012083
+  Banks:
+  - {fileID: 5725514409690219146}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

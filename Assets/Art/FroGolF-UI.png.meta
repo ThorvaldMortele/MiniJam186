@@ -26,6 +26,24 @@ TextureImporter:
   - first:
       213: -6042910268480180407
     second: FroGolF-UI_7
+  - first:
+      213: -6412154498138696385
+    second: FroGolF-UI_8
+  - first:
+      213: -3413697117451490530
+    second: FroGolF-UI_9
+  - first:
+      213: -2647750746078614296
+    second: FroGolF-UI_10
+  - first:
+      213: -4108939376673637285
+    second: FroGolF-UI_11
+  - first:
+      213: 2952142486648493706
+    second: FroGolF-UI_12
+  - first:
+      213: 908910166803131708
+    second: FroGolF-UI_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -277,6 +295,48 @@ TextureImporter:
       name: FroGolF-UI_7
       rect:
         serializedVersion: 2
+        x: 76
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fada5a025432ca0800000000000000
+      internalID: -6042910268480180407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF-UI_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35158df4737307a0800000000000000
+      internalID: -6412154498138696385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF-UI_9
+      rect:
+        serializedVersion: 2
         x: 148
         y: 292
         width: 32
@@ -288,8 +348,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94fada5a025432ca0800000000000000
-      internalID: -6042910268480180407
+      spriteID: e1b6787ee8c10a0d0800000000000000
+      internalID: -3413697117451490530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF-UI_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec653e89bc414bd0800000000000000
+      internalID: -2647750746078614296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF-UI_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cb0c1386d1af6c0800000000000000
+      internalID: -4108939376673637285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF-UI_12
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 256
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 7, z: 6, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86950353fd18f820800000000000000
+      internalID: 2952142486648493706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroGolF-UI_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 256
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 6, y: 8, z: 6, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3daa092bf81d9c00800000000000000
+      internalID: 908910166803131708
       vertices: []
       indices: 
       edges: []

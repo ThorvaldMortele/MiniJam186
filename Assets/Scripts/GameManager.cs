@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +21,9 @@ public class GameManager : MonoBehaviour
 
     public List<Level> Holes = new List<Level>();
     public GameObject RoundEndTallyObj;
+
+    public EventReference LevelEnded;
+    public EventReference GameEnded;
 
     private void Awake()
     {
@@ -106,14 +110,14 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        RoundEndTallyObj = FindObjectOfType<RoundEndTally>().gameObject;
-        RoundEndTallyObj.SetActive(true);
-        RoundEndTallyObj.GetComponent<RoundEndTally>().DisplayScores();
+        AudioManager.Instance.PlaySFX(GameEnded);
     }
 
     public IEnumerator DelayAfterGoalReachedShowScoreBoard()
     {
         yield return new WaitForSeconds(DelayBetweenLevels);
+
+        AudioManager.Instance.PlaySFX(LevelEnded);
 
         RoundEndTallyObj.SetActive(true);
         RoundEndTallyObj.GetComponent<RoundEndTally>().DisplayScores();

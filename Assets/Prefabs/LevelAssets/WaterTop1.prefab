@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 851094570341426805}
   - component: {fileID: 8075111698116747542}
   - component: {fileID: 6236453371090085110}
+  - component: {fileID: 8893400135748541031}
   m_Layer: 0
   m_Name: WaterTop1
   m_TagString: Untagged
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -109,3 +110,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &8893400135748541031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3895185946834495128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccaca21db273bd045b47762e4aacbf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SplashVFX: {fileID: 4472392096271385449, guid: 1cdf2ab06ebdb6b41a4b10c6dfa826f3, type: 3}

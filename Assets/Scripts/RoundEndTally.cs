@@ -21,8 +21,8 @@ public class RoundEndTally : MonoBehaviour
 
         ScoreObjs[ScoreObjs.Count-1].transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = total.ToString();
 
-        if (GameManager.Instance.CurrentLevel > 6) ButtonText.text = "Main Menu";
-        else ButtonText.text = "Next Hole";
+        if (GameManager.Instance.CurrentLevel > 6) ButtonText.text = "MAIN MENU";
+        else ButtonText.text = "NEXT HOLE";
     }
 
     public void NextHole()
