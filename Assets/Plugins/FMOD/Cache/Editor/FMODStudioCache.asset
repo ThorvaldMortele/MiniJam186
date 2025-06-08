@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-8601146805080012228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21,6 +22,9 @@ MonoBehaviour:
     Value: 988
   Exists: 1
 --- !u!114 &-7703484498279465246
+=======
+--- !u!114 &-8084747524640186553
+>>>>>>> origin/GameJam/Art
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,6 +34,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
   m_Name: event:/GolfHit
   m_EditorClassIdentifier: 
   Path: event:/GolfHit
@@ -49,6 +54,27 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 0
 --- !u!114 &-5104014006700008664
+=======
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  Guid:
+    Data1: -1082105853
+    Data2: 1148868649
+    Data3: 2129072027
+    Data4: 665217967
+  Banks:
+  - {fileID: 5303122037408374393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 268460608232031851}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 35905
+--- !u!114 &-5316727657038601230
+>>>>>>> origin/GameJam/Art
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,11 +93,16 @@ MonoBehaviour:
     Data3: 931154075
     Data4: 1257043624
   Banks:
+<<<<<<< HEAD
   - {fileID: -3798322164385752517}
+=======
+  - {fileID: 5303122037408374393}
+>>>>>>> origin/GameJam/Art
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
+<<<<<<< HEAD
   - {fileID: -62210055844050326}
   MinDistance: 1
   MaxDistance: 20
@@ -149,6 +180,211 @@ MonoBehaviour:
   Labels: []
   Exists: 1
 --- !u!114 &-62210055844050326
+=======
+  - {fileID: 5410262723564483547}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4138885710910618463
+>>>>>>> origin/GameJam/Art
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+<<<<<<< HEAD
+  m_Name: parameter:/Ribbit/RibbitVoiceOver
+  m_EditorClassIdentifier: 
+  Name: RibbitVoiceOver
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3843422299
+    data2: 3639538024
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Good
+  - Perfect
+=======
+  m_Name: parameter:/GolfHit/GolfHit
+  m_EditorClassIdentifier: 
+  Name: GolfHit
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1051179845
+    data2: 1457467911
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - HitNeutral
+  - HitGood
+  - HitPerfect
+>>>>>>> origin/GameJam/Art
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+<<<<<<< HEAD
+  - {fileID: -8601146805080012228}
+  - {fileID: -3798322164385752517}
+  EditorEvents:
+  - {fileID: -3089408003752684313}
+  - {fileID: -5104014006700008664}
+  - {fileID: -7703484498279465246}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -3798322164385752517}
+  StringsBanks:
+  - {fileID: -8601146805080012228}
+  cacheTime: 638849361856554994
+  cacheVersion: 131624
+--- !u!114 &7459034350307120314
+=======
+  - {fileID: 5181976266073978855}
+  - {fileID: 5303122037408374393}
+  EditorEvents:
+  - {fileID: -8084747524640186553}
+  - {fileID: -5316727657038601230}
+  - {fileID: 2275148489829726519}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 5303122037408374393}
+  StringsBanks:
+  - {fileID: 5181976266073978855}
+  cacheTime: 638849183982421713
+  cacheVersion: 131624
+--- !u!114 &268460608232031851
+>>>>>>> origin/GameJam/Art
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+<<<<<<< HEAD
+  m_Name: parameter:/GolfHit/GolfHit
+  m_EditorClassIdentifier: 
+  Name: GolfHit
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1051179845
+    data2: 1457467911
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - HitNeutral
+  - HitGood
+  - HitPerfect
+=======
+  m_Name: parameter:/Music/IsInGame
+  m_EditorClassIdentifier: 
+  Name: IsInGame
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2979005681
+    data2: 2116432426
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2275148489829726519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GolfHit
+  m_EditorClassIdentifier: 
+  Path: event:/GolfHit
+  Guid:
+    Data1: 501457214
+    Data2: 1338573347
+    Data3: -1959033185
+    Data4: 297172927
+  Banks:
+  - {fileID: 5303122037408374393}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4138885710910618463}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5181976266073978855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Fro-G-olF/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638849183982421713
+  FileSizes:
+  - Name: Desktop
+    Value: 988
+  Exists: 1
+--- !u!114 &5303122037408374393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Fro-G-olF/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638849183982380999
+  FileSizes:
+  - Name: Desktop
+    Value: 152064
+  Exists: 1
+--- !u!114 &5410262723564483547
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,57 +409,5 @@ MonoBehaviour:
   Labels:
   - Good
   - Perfect
-  Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -8601146805080012228}
-  - {fileID: -3798322164385752517}
-  EditorEvents:
-  - {fileID: -3089408003752684313}
-  - {fileID: -5104014006700008664}
-  - {fileID: -7703484498279465246}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -3798322164385752517}
-  StringsBanks:
-  - {fileID: -8601146805080012228}
-  cacheTime: 638849361856554994
-  cacheVersion: 131624
---- !u!114 &7459034350307120314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/GolfHit/GolfHit
-  m_EditorClassIdentifier: 
-  Name: GolfHit
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 1051179845
-    data2: 1457467911
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - HitNeutral
-  - HitGood
-  - HitPerfect
+>>>>>>> origin/GameJam/Art
   Exists: 1

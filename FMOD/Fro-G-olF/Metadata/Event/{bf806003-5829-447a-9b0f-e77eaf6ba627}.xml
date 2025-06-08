@@ -58,7 +58,17 @@
 			<destination>{b8129b51-c001-4065-9f95-5dcc0ab0aa51}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{080b8b19-ca8a-43cb-8371-191d5b4d8205}" />
+	<object class="EventAutomatableProperties" id="{080b8b19-ca8a-43cb-8371-191d5b4d8205}">
+		<property name="isPersistent">
+			<value>true</value>
+		</property>
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
+		<property name="voiceStealing">
+			<value>3</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{e18579ef-5622-4622-b394-08128a7d06da}" />
 	<object class="MarkerTrack" id="{e520428d-fbeb-4509-9d8c-367788d7eb68}" />
 	<object class="GroupTrack" id="{f1671af7-f0f3-4f72-8b0b-33e970e2c496}">
@@ -170,7 +180,6 @@
 		<property name="maxVoices">
 			<value>1</value>
 		</property>
-		<property name="name" />
 		<property name="looping">
 			<value>true</value>
 		</property>
