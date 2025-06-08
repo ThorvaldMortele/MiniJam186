@@ -187,8 +187,25 @@ MonoBehaviour:
   RequiredStationaryTime: 1
   VelocityThreshold: 0.05
   PowerBar: {fileID: 0}
-  CurrentLevel: {fileID: 11400000, guid: 9566327a9a59beb41bc63ec9314594a3, type: 2}
+  CurrentLevel: {fileID: 11400000, guid: 4006509e0e8f2e947bf55fc5fad0f8ba, type: 2}
   RoundEndTallyObj: {fileID: 0}
+  CurrentCombo: 0
+  ComboText: {fileID: 0}
+  _cam: {fileID: 0}
+  _ballHit:
+    Guid:
+      Data1: 501457214
+      Data2: 1338573347
+      Data3: -1959033185
+      Data4: 297172927
+    Path: event:/GolfHit
+  _ribbit:
+    Guid:
+      Data1: 729240623
+      Data2: 1215681492
+      Data3: 931154075
+      Data4: 1257043624
+    Path: event:/Ribbit
 --- !u!114 &3504933828725941326
 MonoBehaviour:
   m_ObjectHideFlags: 0

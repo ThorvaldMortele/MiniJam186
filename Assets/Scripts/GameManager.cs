@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public float StartDelay = 3f;  // Wait 3 seconds before allowing aiming
     private float _startTimer = 0f;
 
-    public float DelayBetweenLevels = 2f;
+    public float DelayBetweenLevels = 1f;
     public float MaxLevels = 6;
 
     public bool HasScored = false;
@@ -92,7 +92,6 @@ public class GameManager : MonoBehaviour
         else
         {
             StartCoroutine(DelayAfterGoalReachedShowScoreBoard());
-
         }
     }
 
@@ -100,7 +99,16 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(DelayBetweenLevels);
 
-        SceneManager.LoadScene("EndScene");
+        AsyncOperation asyncLoaded = SceneManager.LoadSceneAsync("EndScene", LoadSceneMode.Single);
+
+        while (!asyncLoaded.isDone)
+        {
+            yield return null;
+        }
+
+        RoundEndTallyObj = FindObjectOfType<RoundEndTally>().gameObject;
+        RoundEndTallyObj.SetActive(true);
+        RoundEndTallyObj.GetComponent<RoundEndTally>().DisplayScores();
     }
 
     public IEnumerator DelayAfterGoalReachedShowScoreBoard()
@@ -125,6 +133,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        AudioManager.Instance.UpdateMusicParameter("IsInGame", 1);
         SceneManager.LoadScene("Level" + CurrentLevel, LoadSceneMode.Single);
     }
 }
