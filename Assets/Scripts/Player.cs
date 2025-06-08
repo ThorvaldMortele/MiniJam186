@@ -277,6 +277,7 @@ public class Player : MonoBehaviour
                     PlayPop(_currentBaseScale, 0.15f, true); // Shake enabled
                     Shake(2.5f, 0.3f);
                     PopPowerBar(1.25f, 0.3f);
+                    StartCoroutine(FreezeTimeMoment(0.15f)); // 0.15 seconds freeze
                     break;
                 }
 
@@ -349,5 +350,12 @@ public class Player : MonoBehaviour
     {
         if (_noise == null) return;
         _noise.m_AmplitudeGain = 0f;
+    }
+
+    private IEnumerator FreezeTimeMoment(float duration)
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(duration);
+        Time.timeScale = 1f;
     }
 }

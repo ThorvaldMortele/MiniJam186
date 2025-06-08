@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GolfBall : MonoBehaviour
@@ -16,6 +17,7 @@ public class GolfBall : MonoBehaviour
     public PhysicsMaterial2D LilyMaterial;
 
     public float RaycastDistance = 1f;
+    public TextMeshProUGUI SpeedText;
 
     void Start()
     {
@@ -67,5 +69,16 @@ public class GolfBall : MonoBehaviour
                 _rb.sharedMaterial = GrassMaterial;
             }
         }
+    }
+
+    private void Update()
+    {
+        float speedKmh = _rb.velocity.magnitude * 3.6f;
+        SpeedText.text = speedKmh.ToString("F1") + " km/h";
+
+        if (speedKmh > 50)
+            SpeedText.color = Color.yellow;
+        else
+            SpeedText.color = Color.white;
     }
 }

@@ -40,8 +40,8 @@ public class Hole : MonoBehaviour
     private IEnumerator CheckBallStaysInGoal(Rigidbody2D ballRb)
     {
         float timeInGoal = 0f;
-        float requiredStationaryTime = 1f;
-        float velocityThreshold = 0.05f;
+        float requiredStationaryTime = .5f;
+        float velocityThreshold = 0.1f;
 
         while (_ballInside && !GameManager.Instance.HasScored)
         {
