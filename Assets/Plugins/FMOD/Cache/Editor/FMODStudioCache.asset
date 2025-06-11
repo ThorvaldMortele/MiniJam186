@@ -41,10 +41,10 @@ MonoBehaviour:
   Path: FMOD/Fro-G-olF/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638849953658921925
+  lastModified: 638850206284973715
   FileSizes:
   - Name: Desktop
-    Value: 1086
+    Value: 1174
   Exists: 1
 --- !u!114 &-6869962856827041730
 MonoBehaviour:
@@ -154,7 +154,7 @@ MonoBehaviour:
   - {fileID: 5725514409690219146}
   StringsBanks:
   - {fileID: -8390576874200459898}
-  cacheTime: 638849953658921925
+  cacheTime: 638850206284973715
   cacheVersion: 131624
 --- !u!114 &2873345930056618932
 MonoBehaviour:
@@ -227,10 +227,10 @@ MonoBehaviour:
   Path: FMOD/Fro-G-olF/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638849953658907334
+  lastModified: 638850206284963680
   FileSizes:
   - Name: Desktop
-    Value: 182912
+    Value: 183456
   Exists: 1
 --- !u!114 &7015894383844927261
 MonoBehaviour:
